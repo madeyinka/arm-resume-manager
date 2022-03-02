@@ -1,0 +1,30 @@
+{
+  "name": "arm-resume-manager",
+  "version": "1.0.0",
+  "description": "Manages job listings and applications. keeps candidates resume for future references.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeyinka/arm-resume-manager.git"
+  },
+  "author": "WowEffect NG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madeyinka/arm-resume-manager/issues"
+  },
+  "homepage": "https://github.com/madeyinka/arm-resume-manager#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "moment-timezone": "^0.5.34",
+    "nodemon": "^2.0.15",
+    "unirest": "^0.6.0",
+    "winston": "^3.6.0"
+  }
+}
