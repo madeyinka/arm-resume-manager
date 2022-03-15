@@ -11,6 +11,15 @@ const Utility = {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         return res;
+    },
+
+    param_extract: function(req){
+        var data = {}
+        if (req.fields)
+            data = req.fields
+        else if(req.body)
+            data = req.body;
+        return data
     }
 }
 
