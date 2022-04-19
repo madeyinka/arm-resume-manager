@@ -20,7 +20,6 @@ router.get(api_url+'/job/overview', (req, res) => {
 })
 
 router.post(api_url+'/candidate', (req, res) => {
-    console.log(req.body)
     controller.applicant(Util.param_extract(req), (state) => {
         Util.resp(res).json(state)
     })
