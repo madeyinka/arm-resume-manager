@@ -21,8 +21,8 @@ const DAO = {
         })
     },
 
-    applicant: (params, callback) => {
-        const error = [], param = JSON.parse(params)
+    applicant: (param, callback) => {
+        const error = []
         if (!param.short_code)error.push("ShortCode is Required")
         if (!param.firstname)error.push("First name is required")
         if (!param.lastname)error.push("Last name is required")
