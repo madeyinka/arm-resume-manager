@@ -40,7 +40,8 @@ const DAO = {
                 address:param.address,
                 education_entries: param.education_entries,
                 experience_entries: param.experience_entries,
-                resume:param.resume
+                resume:param.resume,
+                resume_url:param.resume_url
             }
             if (data) { 
                 const url = process.env.baseURL + '/jobs/' + `${param.short_code}` + '/candidates'
@@ -49,7 +50,6 @@ const DAO = {
                 .send({"candidate": data})
                 .then((response) => {
                     return callback(Resp.success({msg:"Result", resp:response.body}))
-                    //console.log(response.body)
                 })
             }
         } else 
